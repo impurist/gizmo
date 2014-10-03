@@ -1,5 +1,5 @@
 Given /^a user is on the github homepage$/ do
-  visit "http://github.com"
+  visit "https://github.com"
 end
 
 When /^the user enters "([^\"]*)" into the search box and clicks the magnifying glass icon$/ do |query|
@@ -20,12 +20,12 @@ end
 
 Then /^the user is on the "([^\"]*)" github repository details page$/ do |repo_name|
   on_page_with :github_repo_details do |page|
-    page.repo_details.name.should == repo_name
+    expect(page.repo_details.name).to eq(repo_name)
   end
 end
 
 Then /^the user is on a github repository details page which belongs to "([^\"]*)"$/ do |author|
   on_page_with :github_repo_details do |page|
-    page.repo_details.author.should == author
+    expect(page.repo_details.author).to eq(author)
   end
 end

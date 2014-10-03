@@ -1,10 +1,12 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/../../lib')
 
-require 'spec/expectations'
+require 'rspec/expectations'
 
 #CAPYBARA
 require 'capybara/cucumber'
 require 'capybara/session'
+
+require 'pry'
 
 # require 'features/support/patches/capybara'
 Capybara.default_driver = :selenium
