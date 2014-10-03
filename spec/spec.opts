@@ -1,3 +1,5 @@
 --colour
 --reverse
 --backtrace
+--format html
+--out rspec_results.html
