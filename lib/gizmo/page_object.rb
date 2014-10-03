@@ -1,6 +1,6 @@
 module Gizmo
 
-  class Page
+  class PageObject
 
     attr_reader :url, :document
 
