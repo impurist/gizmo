@@ -1,16 +1,12 @@
-require 'rubygems'
-
-require 'active_support'
-
+require 'active_support/core_ext'
 require 'nokogiri'
 require 'tilt'
 require 'term/ansicolor'
-
-$LOAD_PATH << File.dirname(__FILE__)
+require "gizmo/version"
+require 'pry'
 
 module Gizmo
-
-  autoload :Page,       "gizmo/page"
+  autoload :PageObject, "gizmo/page_object"
   autoload :Helpers,    "gizmo/helpers"
   autoload :PageMixin,  "gizmo/page_mixin"
   autoload :Templates,  "gizmo/templates"
@@ -19,7 +15,7 @@ module Gizmo
   MixinNotValidError = Class.new(GizmoError)
   MixinNotFoundError = Class.new(GizmoError)
   NilResponseError = Class.new(GizmoError)
-
+  NoBlockGivenError = Class.new(GizmoError)
 end
 
 require "gizmo/configuration"
