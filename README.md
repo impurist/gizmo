@@ -1,31 +1,58 @@
-# Gizmo
+Gizmo
+============
 
-TODO: Write a gem description
+In homage to its humble beginnings as our 'gremlin' testing submodule.<br />
+With which we were entrusted and asked to follow 3 simple rules...
 
-## Installation
+* "Don't get it wet"
+* "Keep it away from bright lights....especially sunlight"
+* "Don't ever feed it after midnight"
 
-Add this line to your application's Gemfile:
+We didn't listen, and it got nasty...<br />
+So, we've gone back to the drawing board and come up with a friendlier, cuddlier testing helper.
 
-```ruby
-gem 'gizmo'
-```
+**Gizmo** is a simple page model testing framework used and sponsored by [realestate.com.au](http://www.realestate.com.au). The aim of the project is to DRY up testing assertions by abstracting code that defines your page, resulting in a consistent, easy to maintain test suite. 
 
-And then execute:
+The project is mostly maintained by Contributors from REA.
 
-    $ bundle
+Code was stolen from:
+------------
+* [Steven Holloway](http://github.com/impurist)
+* [Sam Weller](http://github.com/samweller)
+* [Mark Ryall](http://github.com/markryall)
+* [Mike Bain](http://github.com/Nolf)
+* [Perryn Fowler](http://github.com/perryn)
 
-Or install it yourself as:
 
-    $ gem install gizmo
+Install
+------------
 
-## Usage
+    sudo gem install gizmo
 
-TODO: Write usage instructions here
 
-## Contributing
+Usage
+------------
+* [with Cucumber](http://wiki.github.com/icaruswings/gizmo/cucumber)
+* [with RSpec](http://wiki.github.com/icaruswings/gizmo/rspec)
 
-1. Fork it ( https://github.com/[my-github-username]/gizmo/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+
+Development
+------------
+* Source hosted at [Github](http://github.com/icaruswings/gizmo).
+* Please direct questions, discussions at the [mailing list](http://groups.google.com/group/gizmo-gem).
+* Report issues in the [Github issue tracker](http://github.com/icaruswings/gizmo/issues)
+
+
+Contributing
+------------
+* Fork the project.
+* Make your feature addition or bug fix.
+* Make sure you write tests. Pull requests will not be accepted unless they have complete coverage.
+* Commit, do not mess with Rakefile, VERSION, or history.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request.
+
+
+Sponsored by
+------------
+[realestate.com.au](http://www.realestate.com.au)
