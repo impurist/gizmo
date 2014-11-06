@@ -20,10 +20,6 @@ module Gizmo
     # end
     def valid?; true; end
 
-    def has_selector? css_selector
-      @document.css(css_selector).length > 0
-    end
-
     def perform action_name, *params
       method_name = "#{action_name.to_s}_action".to_sym
       raise NoMethodError, "No action named '#{action_name}' has been defined" unless respond_to? method_name
